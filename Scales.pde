@@ -1,13 +1,13 @@
-int screenSize = 500;
+int screenSize = 700;
 
 public void setup() {
-  size(500, 500);
-  frameRate(10);
+  size(700, 700);
+  frameRate(13);
 }
 
 public void draw() {
  
-  int r = 1 + (int)(Math.random()*64);
+  int r = 1 + (int)(Math.random()*100);
   int g = 2 + (int)(Math.random()*60);
   int b = 1 + (int)(Math.random()*70);
   background(r, g, b);
@@ -28,12 +28,7 @@ public void draw() {
     currentX = resetValueX;
     currentY -= boxHeight;
   }
-  System.out.println("Finally! Its over.");
-  currentY = 0;
-  resetValueX = resetValueX+boxLength/2;
-  //Making the triangles on top
-  text(mouseX, 20, 480);
-  text(mouseY, 40, 480);
+
 }
 
 void scale(int x, int y, float n) {
