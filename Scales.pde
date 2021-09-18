@@ -1,5 +1,3 @@
-import processing.net.*;
-
 int screenSize = 500;
 
 public void setup() {
